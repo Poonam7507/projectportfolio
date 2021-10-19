@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+
+            <div class="navelem"><a href="index.html"> Home</a></div>
+            <div class="navelem"><a href="about.html">About</a></div>
+            <div class="navelem"><a href="education.html">Education</a></div>
+            <div class="navelem"><a href="contact.html">Contact Me</a></div>
+
+        </div>
+    </nav>
+    
+    <div id="popupbox">
+        
+
+        <div class="pop up" onmouseover="enter()" onmouseleave="exit()">
+            <h1 class="header">Hi, I am Poonam </h1>
+            <h3>I am a learner and trying to learn more and more skills.</h3>
+             <h3>   I'm on the way to explore my fullest potential.
+            </h3>
+        </div>
+
+        <div class="pop ">
+            <img id="img" src="/pic/icon1.png" alt="" height="50%">
+        </div>
+        <div class="movable pop">
+            <div class="item "  onmouseover="showimg1()" onmouseleave="exit()"
+                onclick="clicko1()">
+                <h3>Skills</h3>
+            </div>
+            <div class="item" onmouseover="document.getElementById('img').src='/pic/project.png'" onmouseleave="exit()"
+                onclick="clicko2()">
+                <h3>Projects</h3>
+            </div>
+            <div class="item" onmouseover="document.getElementById('img').src='/pic/hobby.png'" onmouseleave="exit()"
+                onclick="clicko3()">
+                <h3>Interests</h3>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div id="skill" class="box1">
+        <div class="outerbox">
+            <button id="button" onclick="exit1()"> <i class="fa fa-close"></i></button>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+    </div>
+    <div id="project" class="box2">
+        <button id="button" onclick="exit2()"><i class="fa fa-close"></i></button>
+        
+        <div class="site">
+            <h2>1. Health Centre</h2>
+            <p>Using Html CSS</p>
+        </div>
+        <div class="site">
+            <h2>2. Electro Shop</h2>
+            <p>Using Html CSS and little bit Javascript</p>
+            <p> <a href="https://vigorous-roentgen-14dfa9.netlify.app" target="_blank"><b><i> Visit
+                            Project:"https://vigorous-roentgen-14dfa9.netlify.app"</i></b></a></p>
+        </div>
+    </div>
+    <div id="interest" class="box3">
+        <div class="outerbox">
+            <button id="button" onclick="exit3()"><i class="fa fa-close"></i></button>
+          
+            <div class="mood">
+                <h3><i class="fa fa-pencil"></i>Drawing and Painting</h3>
+            </div>
+            <div class="mood">
+                <h3><i class="fa fa-headphones"></i>Listening Music</h3>
+            </div>
+            <div class="mood">
+                <h3><i class="fa fa-paint-brush"></i> Mandala Art</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showimg1(){
+            document.getElementById('img').src='/pic/skill.png';
+        }
+        var popup = document.getElementById("img");
+        function enter() {
+            popup.src = '/pic/icon3.png';
+
+        }
+        var push = document.getElementById("img");
+        function exit() {
+            push.src = '/pic/icon1.png'
+        }
+
+        var cli1 = document.getElementById("skill");
+        var cli2 = document.getElementById("project");
+        var cli3 = document.getElementById("interest");
+        var end = document.getElementById("button");
+        var s = document.getElementById("popupbox");
+        function clicko1() {
+            cli1.style.display = "block";
+            s.style.opacity = "0.5";
+        }
+        function clicko2() {
+            cli2.style.display = "block";
+            s.style.opacity = "0.5";
+
+
+        }
+        function clicko3() {
+            cli3.style.display = "block";
+            s.style.opacity = "0.5";
+        }
+        function exit1(){
+            cli1.style.display = "none";
+            s.style.opacity = "1";
+        }
+        function exit2(){
+            cli2.style.display = "none";
+            s.style.opacity = "1";
+        }
+        function exit3(){
+            cli3.style.display = "none";
+            s.style.opacity = "1";
+        }
+    </script>
+</body>
+
+</html>

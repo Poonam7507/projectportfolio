@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav>
+        <div class="navbar" id="mynavbar">
+          
+            <div class="navelem" ><a href="index.html"> Home</a></div>
+            <div class="navelem" ><a href="about.html">About</a></div>
+            <div class="navelem" ><a href="education.html">Education</a></div>
+            <div class="navelem" ><a href="contact.html">Contact Me</a></div>
+           
+        </div>    
+        </nav>
+        <section id="contactme" ondblclick="messageclose()" >
+    <div class="contactpage">
+       
+        <div class="page" id="form" >
+            <form action="">
+                <div >
+                <input type ="text"  id="name" placeholder="Enter  Name" required  >
+            </div>
+            <div id="column2">
+                <input type ="text"  id="name" placeholder="Enter Mobile no." required>
+            </div>
+         
+            <div id="column3">
+                <input type ="email"  id="name" placeholder="Enter Email id" required>
+            </div >
+            <div id="column4">
+
+                <textarea  id="name" cols="30" rows="10" placeholder="Enter Message" required></textarea>
+            </div>
+              
+      <div>
+          <button class="btn " id="na" onclick="messagesent()">Send Message <i class="fa fa-telegram tele"></i></button>
+        </div>
+       
+            </form>
+            <div class="messagebox" id="messagebox">
+                <div class="message "><i class="fa fa-check icon"></i></div>
+                  <div class="message" > <h2>Sent Successfully</h2></div>
+            </div>
+        </div>
+        <div class="page page1"  >
+            <h1 class="header" >Contact Info</h1>
+            <div class="info"> <i class="fa fa-phone"></i>  8092207507</div>
+            <div class="info"> <i class="fa fa-envelope"></i><a target="_blank" href="mailto:poonam2010037@gmail.com">  Poonam2010037@akgec.ac.in</a></div>
+            <div class="info"> <i class="fa fa-map-marker"></i>  Patna,Bihar</div>
+            </div>
+    </div>
+    </section>
+    
+    <script>
+        var message=document.getElementById("messagebox");
+        function messagesent(){
+            
+            message.style.display="block";
+              
+                    }
+                    function messageclose(){
+            message.style.display="none";
+
+                    }
+      
+    </script>
+ </body>
+</html>

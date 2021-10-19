@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <nav class="nav">
+    <div class="navbar" id="mynavbar">
+      
+        <div class="navelem"><a href="index.html"> Home</a></div>
+        <div class="navelem"><a href="about.html">About</a></div>
+        <div class="navelem" ><a href="education.html">Education</a></div>
+        <div class="navelem" ><a href="contact.html">Contact Me</a></div>
+       
+    </div>    
+    </nav>
+    <section id="home" >
+      <div class="bganimation">
+         <div class="bg">
+          <i class="fa fa-star" style="position:absolute;top:0.9vw; left:8.2vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:10vw; left:64vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:6vw; left:50vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:14vw; left:43vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:16vw; left:9vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:40vw; left:19vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:37vw; left:80vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:1.7vw; left:19vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:3vw; left:50vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:9vw; left:60vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:20vw; left:70vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:25vw; left:80vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:1vw; left:90vw;"></i>
+          <i class="fa fa-star" style="position:absolute;top:26vw; left:30vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:15vw; left:35vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:2vw; left:68vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:23vw; left:49vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:37vw; left:86vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:32vw; left:74vw;"></i>
+          <i class="fa fa-star"style="position:absolute;top:17vw; left:43vw;"></i>
+         </div>
+      </div>
+        <div class="front" onclick="out()">
+        <div class="frame"  id="frame"    >
+            <div class="upper">
+                <i class="fa fa-window-minimize" id="mini" onclick="seen()"></i>
+                <i class="fa fa-window-maximize" id="maxi" onclick="hide()"></i>
+
+                <h1> Poonam Kumari</h1>
+                <h3>Btech CSE</h3>
+            </div>
+           <ul>
+               <li><p>Pursuing Btech From AKGEC</p></li>
+               <li> <p>Love to learn new things</p></li>
+               <li><p>I feel pleasure in helping others </p></li>
+               <li><p>I like to do artwork in my freetime</p></li>
+              
+           <div class="btn" id="btn1" ><button  class="button" onclick="social()" ondblclick="closesocial()"><p>Connect with me   <i  class="fa fa-caret-down" onclick="social()" ></i> </p></button>
+            <div id="socialbtn">
+        <div><a href="https://www.linkedin.com/in/poonam-kumari-121790218/"><i id="icon" class="fa fa-linkedin"></i></a></div>
+        <div><a href="https://www.instagram.com/poonamkumari9303"><i class="fa fa-instagram"></i></a></div>
+        <div><a href="mailto:poonam2010037@akgec.ac.in"><i class="fa fa-envelope"></i></a></div>
+        </div>
+    </div>
+
+    <a href="Poonam's Resume (1).pdf" target="_blank">
+    <button class="button"><p> Download Resume <i class="fa fa-download"></i></p></button>
+
+    </a>
+    
+</ul>
+</div >
+<div class="imagebox" id="imagebox" > <img src="/pic/mypic2.jpeg" alt=""  >
+   
+</div>
+
+        </div>
+        </div>
+           
+          
+        
+        <script>
+          
+          var seeimg=document.getElementById("imagebox");
+          var seecontent=document.getElementById("frame");
+          var min=document.getElementById("mini");
+          var max=document.getElementById("maxi");
+          function seen(){
+              seeimg.style.display="block";
+              max.style.display="block";
+              min.style.display="none";
+            seecontent.style.transform="scale(0.8)";
+
+            }
+            
+          function hide(){
+
+              seeimg.style.display="none";
+             seecontent.style.display="block";
+            seecontent.style.transform="scale(1)";
+              min.style.display="block";
+              max.style.display="none";
+
+
+
+
+          }
+          var socia=document.getElementById("socialbtn");
+          function social(){
+              socia.style.display="block";
+            
+          }
+          function closesocial(){
+            socia.style.display="none";
+
+          }
+
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,636 @@
+
+body{color:white;
+  background: url("/pic/bg1.jpg");
+}
+
+nav .navbar{
+
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.navbar {
+    margin-top: 1%;
+    display: flex;
+    justify-content: right;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar div{
+    font-size:1.8vw;
+    padding: 5px;
+    border: 2px solid rgb(236, 194, 54);
+    border-radius: 16px;
+    background-color: black;
+    margin-inline: 1.5vw;
+    color:white;
+}
+.navbar div:active{
+    transition-duration:0.1s ;
+    background-color: rgb(128, 128, 128,0.55);
+}
+
+#home .bganimation .bg{
+    position: absolute;
+    top:50px;
+}
+#home .bganimation .bg i{
+    color: whitesmoke;
+    font-size: 0.8vw;
+    animation: staranime 3s ease-in infinite;
+    
+}
+
+
+@keyframes staranime {
+    40%{
+        transform: translate(0px,50px) scale(1.5);
+    }
+    50%{
+        transform: translate(0px,70px) scale(1);
+
+    }
+    70%{
+        transform: translate(0px,90px) scale(1.5);
+
+    }
+    90%{
+        transform: translate(0px,90px) scale(1.5);
+
+    }
+    100%{
+        transform: translate(0px,120px) scale(1);
+    }
+}
+#home .front{
+    margin: 10%;
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    animation: seen 0.3s 1;
+    height: 100%;
+}
+@keyframes seen {
+    0%{
+     transform: scale(0.6);
+      opacity: 0;
+    }
+    
+    25%{
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    45%{
+        transform: scale(0.9);
+
+        opacity: 0.6;
+    }
+    50%{
+        transform: scale(0.9);
+
+        opacity: 0.8;
+    }
+    80%{
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+#home .frame{
+    margin-top: 20px;
+    width:60%;
+    background:linear-gradient(to bottom,black,rgb(141, 141, 141,0.25),black);
+    box-shadow: 4px 4px 8px 5px grey;
+    font-size: 2vw;
+   border-bottom-right-radius: 20px;
+}
+
+#home h1{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    
+    color:white;
+    margin-top: 2px;
+    text-align: center;
+    opacity: 0;
+    cursor:pointer;
+
+    text-shadow: 2px 2px 2px black;
+   letter-spacing: 0.1vw;
+   word-spacing: 1px;
+    animation: seen 0.3s ease-in-out 0.4s forwards;
+}
+#home h3{
+    
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    
+    opacity: 0;
+    animation: seen 0.3s ease-in-out 0.9s forwards;
+    cursor:pointer;
+
+
+
+}
+
+
+#home .frame .upper{
+    font-size: 1.5vw;
+    border-top-left-radius: 20px;
+    text-align: right;
+    outline: 4px solid rgb(236, 194, 54);
+    background:linear-gradient(to right bottom ,rgb(236, 194, 54),grey);
+}
+#home .frame .upper i{
+    color:white;
+}
+#home .frame .upper #maxi{
+    display: none;
+}
+#home   ul {
+    padding-left: 15%;
+}
+#home  .frame ul li{
+    text-shadow: 2px 2px 2px black;
+    list-style:none;
+    word-spacing: 0.3vw;
+    position: relative;
+    opacity: 0;
+    cursor:pointer;
+    letter-spacing: -9px;
+}
+#home  .frame ul li:nth-child(1){
+    animation: paraanime 0.4s ease-in-out 1.5s  forwards;
+
+}
+#home  .frame ul li:nth-child(2){
+    animation: paraanime 0.4s ease-in-out 2.2s forwards;
+
+}
+#home  .frame ul li:nth-child(3){
+    animation: paraanime 0.4s ease-in-out 2.9s forwards;
+
+}
+#home  .frame ul li:nth-child(4){
+    animation: paraanime 0.4s ease-in-out 3.6s forwards;
+
+}
+
+@keyframes paraanime {
+    40%{opacity: 1;
+        letter-spacing: -8px;
+        /* transform-origin: left; */
+        transform: translate(-2px,0px);
+    }
+    60%{opacity: 1;
+        letter-spacing: -7px;
+        transform: translate(3px,0px);
+
+    }
+    80%{opacity: 1;
+        letter-spacing: -1px;
+        transform: translate(4px,0px);
+
+    }
+    100%{opacity: 1;
+        letter-spacing:1px;
+        transform: translate(5px,0px);
+
+    }
+}
+#home  .frame ul li::before{
+    content: "\25BA \0020";
+    position: absolute;
+    font-size: 1vw;
+    top:20%;
+    left:-5%
+
+}
+#home .front .button:hover{
+    transition: all 0.5s ease-in;
+    background-color: red;
+    color: white;
+  transform: translate(0px,-2px);
+
+}
+#home .front .button i{
+    color: black;
+}
+#home .front #socialbtn{
+    display: none;
+    margin-left: 7%;
+    margin-top: 5px;
+    
+}
+#home #socialbtn .fa{
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+    background:linear-gradient(to right bottom,pink,rgb(104, 104, 226));
+}
+
+
+
+
+
+
+#home .front .button{
+    border-radius: 15px;
+    font-size: 1vw;
+   
+    opacity: 0;
+    animation: seen 0.2s ease-in-out 4.5s forwards ;
+}
+
+
+
+#home .front .imagebox{
+    width:80%;
+     
+    display: none;
+    
+}
+#home .front img{
+    max-width: 51%;
+    position: relative;
+    top:13%;
+    height: auto;
+}
+
+
+
+#education h1{
+    text-align: center;
+    margin-top:10%;
+    font-size: 2vw;
+}
+ h1.header::first-letter{
+color:red;
+}
+ #education .container {
+     display: none;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px 0px #d6d6d6;
+    margin: auto;
+    padding: 1%;
+    width:50%;
+    text-align: center;
+    animation: seen 0.3s ease-in-out  ;
+    
+    
+}
+
+#education .container .box {
+    color: white;
+  width: 50%;
+  margin: auto;
+  padding: 12px;
+  font-size: 1.8vw;
+    border-bottom: 2px solid rgb(236, 194, 54);
+    
+}
+#education .container .box :hover{
+    transition-duration:0.5s ;
+    transform: scale(1.1);
+}
+#education .container .box:nth-child(1) {
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out 0.5s forwards;
+
+}
+#education .container .box:nth-child(2) {
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out 1.8s forwards;
+
+}
+#education .container .box:nth-child(3) {
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out 2.8s forwards;
+
+}
+#popupbox{
+    font-size: 1.8vw;
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+   
+    
+}
+
+#popupbox .up{
+    box-shadow: 2px 2px 7px  rgb(236, 194, 54) ;
+    opacity: 0;
+    animation: seen 0.5s ease-in-out forwards;
+    height: 50%;
+}
+#popupbox .pop{
+    width:40%;
+}
+
+#popupbox img{
+
+   border-radius: 50%;
+   box-shadow: 2px 2px 4px  3px rgb(236, 194, 54) ;
+   
+   opacity: 0;
+    animation: seen 0.5s ease-in-out 0.7s forwards;
+    max-width: 100%;
+}
+
+
+
+#popupbox .movable{
+   
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+@keyframes movebox {
+        100%{
+            transform: translateY(-18px);
+            opacity: 1;
+        }
+}
+#popupbox .movable h3:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+ #popupbox .movable .item{
+    margin: 15px;
+    padding: 4px;
+    border-radius: 20px;
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out 1s forwards;
+
+    box-shadow: 2px 2px 7px  rgb(236, 194, 54) ;
+}
+#popupbox .movable .item:active{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+.box1, .box2, .box3{
+    position:fixed;
+    left:28%;
+    border-radius: 20px;
+    top:28%;
+    width: 50%;
+    border: 2px solid rgb(236, 194, 54); 
+  display: none;
+  background:linear-gradient(grey,white);
+
+  box-shadow: 2px 2px 8px 4px white;
+  color: white;
+  font-size: 2.5vw;
+  text-shadow: 2px 2px 2px black;
+  animation: seen 0.3s 1;
+
+}
+.box2 p{
+    color:black;
+    text-shadow: 2px 2px 2px rgb(173, 169, 169);
+}
+#skill ul li{
+    margin: 10px;
+}
+#skill ul {
+    
+    list-style-type: square;
+}
+#skill ul li::marker{
+    color: rgb(236, 194, 54);
+    
+}
+#project .site{
+    font-size: 2vw;
+    text-align: center;
+    border-bottom: 2px solid rgb(31, 28, 21);
+
+}
+#project .site a{
+    text-decoration: none;
+    color:rgb(236, 194, 54);
+    text-shadow: 2px 2px white;
+}
+#interest .mood{
+     text-align: center;
+}
+#button{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 1.4vw;
+}
+#contactme h1{
+    margin-top: 2%;;
+    text-align: center;
+}
+#contactme .contactpage{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+#contactme .contactpage .page{
+    width: 30%;
+    height: 60%;
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out 1s forwards;
+
+    
+}
+#contactme .contactpage #form{
+    opacity: 0;
+    animation: movebox 0.9s ease-in-out  forwards;
+
+    position: relative;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 3px grey;
+    background:linear-gradient(to right top,grey,white);
+    border: 2px solid black;
+}
+#contactme .contactpage .page #name{
+    width: 97%;
+    padding: 0.6vw;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px gray;
+} 
+#contactme .contactpage .page #na{
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 1.2vw;
+}
+#contactme .contactpage .page #na:hover{
+    transition-duration:0.3s ;
+    transform: translate(0px,-2px);
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: red;
+    color:white;
+}
+#contactme .contactpage .page #na:active{
+    cursor:progress;
+}
+#contactme .contactpage .page .tele{
+    color: black;
+}
+#contactme .contactpage .page1:hover{
+    transform: translate(0px,-10px);
+    transition: all 0.1s ease-in-out;
+}
+#contactme .contactpage .page i:hover{
+    color:white;
+}
+#contactme .contactpage .page .info ,h1{
+    margin-bottom: 10px; 
+ } 
+ #contactme .contactpage .page1 {
+     border-radius: 20px;
+     padding: 20px;
+     box-shadow: 10px 10px 20px 10px rgba(234, 234, 238, 0.35);
+     justify-content: center;
+     font-size: 1.8vw;
+    margin-top: 50px;
+    height: 50%;
+    
+}
+#contactme .contactpage .page1 a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    color:red;
+}
+#foot .logo{
+    margin: 5px;
+    display: flex;
+}
+#contactme .contactpage .messagebox {
+    display: flex;
+    display: none;
+    position: absolute;
+    top:20%;
+    left: 24%;
+    justify-content: center;
+    padding: 2vw;
+    flex-direction: column;
+    background-color: gray;
+    box-shadow: 2px 2px 5px 3px black;
+    margin: 0px;
+    animation: seen 0.3s ease-in-out  forwards;
+    border-radius: 12px;
+}
+
+#contactme .contactpage .messagebox .message{
+   text-align: center;
+   color: white;
+   text-shadow: 2px 2px 3px  black;
+}
+#contactme .contactpage .messagebox .message h2{ 
+    font-size: 2vw;
+}
+#contactme .contactpage .messagebox .icon{
+    font-size: 5vw;
+    color: white;
+    border: 2px solid white;
+    border-radius:50% ;
+    animation: jump 0.2s ease-in-out 0.2s;
+    
+
+}
+ @keyframes jump {
+    10%{
+        transform: scale(0.4) translate(0,0) ;
+    }
+    45%{
+        transform: scale(0.7) ;
+    }
+    80%{
+        transform: scale(0.9) translate(0,0);
+    }
+    100%{
+        transform: scale(1) translate(0,0);
+    } 
+}
+
+
+@media screen and (max-width:383px){
+ 
+    .navbar .navelem{
+        font-size: 2.5vw;
+}
+  #home .front{
+      height: 100%;
+
+      width: 100%;
+    }
+    
+    #home .frame{
+        font-size: 4vw;
+
+    }
+    #home h1,h3{
+        font-size: 4vw;
+
+    }
+    #home ul{
+        padding-left: 7%;
+    }
+    #popupbox {
+        flex-direction: column;
+        
+    }
+    #popupbox .pop{
+        
+        justify-content: space-around;
+        margin-left: 30%;
+        margin-bottom:30px;
+    }
+    #contactme .contactpage #form{
+        z-index:-1;
+    }
+    #contactme .contactpage{
+        margin-top: 25%;
+        flex-direction: column;
+        margin-left: 21%;
+    }
+    #contactme .contactpage .page{
+        width: 64%;
+        font-size: 3vw;
+
+    }
+    #contactme .contactpage .page #na{
+        font-size: 3vw;
+    }
+    #education h1,h3{
+        font-size: 3vw;
+
+    }
+    #education .container{
+        padding: 3%;
+    }
+    #education .container .box{
+        font-size: 3vw;
+
+    }
+    #education h1{
+        margin-top: 20%;
+    }
+    .button p{
+        font-size: 2vw;
+    }
+}
+    
